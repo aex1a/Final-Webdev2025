@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AM</title>
+    <link href="https://fonts.cdnfonts.com/css/schoonheid" rel="stylesheet">
+                
+    <link rel="preload" href="Schoonheid.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="FONTSPRINGDEMO-CeraRoundProLightRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="navigation">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="gallery.html""><li>Gallery</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul>
+        <hr>
+
+        <div id="social">
+            <a href="https://www.instagram.com/merwin_yin/"> <img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/angelinemerwin.cainglet.1"><img src="facebook.png" alt="Other Social"></a>
+        </div>
+
+        <h1>ANGELINE MERWIN</h1>
+        <h2>INTERIORS</h2>
+    </header>
+
+    <div class="page-wrapper">
+
+        <section class="hero-top">
+            <div class="headline">
+                <span class="headline-word">ART</span>
+                <span class="headline-word">MODERN</span>
+                <span class="headline-word">INSPIRED</span>
+            </div>
+            <p class="tagline">If you have a home, it deserves beauty.</p>
+        </section>
+
+        <section class="hero-bottom">
+            <div class="hero-image">
+                <img src="angel.png" alt="Angeline Merwin Cainglet">
+            </div>
+
+            <div class="story">
+                <div class="story-block story-block--main">
+                    <p class="story-label">My Story</p>
+                    <p>
+                        Hi! I’m <strong>Angeline Merwin Cainglet</strong>, a 20-year-old
+                        Architecture student from the Polytechnic University of the Philippines.
+                    </p>
+                </div>
+
+                <div class="story-block story-block--mid">
+                    <p>
+                        I’ve always loved designing spaces that feel beautiful, comfortable,
+                        and full of life.
+                    </p>
+                </div>
+
+                <div class="story-block story-block--bottom">
+                    <p>
+                        Even as a student, I’ve already created eye-catching interior design
+                        projects that show my passion for style and detail.
+                    </p>
+                </div>
+
+                <div class="story-footer">
+                    <button class="btn-view-projects">View My Projects</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="footer">
+        <div class="footer-main">
+            <div class="footer-col f-left">
+                <span class="connect-text">STAY CONNECTED</span>
+                <div class="connect-line"></div>
+
+                <div class="f-social">
+                    <a href="https://www.instagram.com/merwin_yin/"> <img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.facebook.com/angelinemerwin.cainglet.1"><img src="facebook.png" alt="Other Social"></a>
+                </div>
+            </div>
+
+            <div class="footer-col f-center">
+                <img src="logo.png" alt="logo" class="f-logo">
+            </div>
+
+            <div class="footer-col f-right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="back-top"><a href="#">BACK TO TOP &uarr;</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-legal">
+            <div class="legal-content">
+                <span >
+                    &copy;
+                    <a href="https://www.facebook.com/r.kiveeele">BUENAOBRA</a>, 
+                    <a href="https://www.facebook.com/jheneil10">CUNANAN</a>, 
+                    <a href="https://www.facebook.com/alexia28nool/">NOOL</a>, 
+                    <a href="https://www.facebook.com/katherine.grace.pangilinan.14">PANGILINAN</a>
+                </span>
+                <div class="legal-links">
+                    <span onclick="showTerms()" style="cursor: pointer;">PRIVACY POLICY</span>
+                    <span onclick="showTerms()" style="cursor: pointer;">TERMS AND CONDITION</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const blocks = document.querySelectorAll('.story-block');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                } else {
+                    entry.target.classList.remove('in-view');
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        blocks.forEach(block => observer.observe(block));
+
+        function showTerms() {
+            alert("TERMS AND CONDITIONS\n\n1. This website is a student portfolio project.\n2. All designs and images remain the intellectual property of Angeline Merwin Cainglet.\n3. @WEBDEV 2025");
+        }
+    </script>
+</body>
+
+</html>
