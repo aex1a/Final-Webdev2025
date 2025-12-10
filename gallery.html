@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery AM</title>
+
+    <link rel="preload" href="Schoonheid.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="FONTSPRINGDEMO-CeraRoundProLightRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header id="navigation">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="gallery.html""><li>Gallery</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul>
+        <hr>
+        <div id="social">
+            <a href="https://www.instagram.com/merwin_yin/"> <img src="instagram.png" alt="IG"></a>
+            <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="IN"></a>
+            <a href="https://www.facebook.com/angelinemerwin.cainglet.1"><img src="facebook.png" alt="FB"></a>
+        </div>
+        <h1>ANGELINE MERWIN</h1>
+        <h2>INTERIORS</h2>
+    </header>
+
+    <section id="home" class="hero-section" aria-label="Hero Section: 2025 Projects Portfolio">
+        <div class="hero-content-wrapper">
+            <div class="portfolio-box">
+                <h2>PORTFOLIO</h2>
+                <h1>2025 Projects</h1>
+                <p>showcases elegant, tailor-made designs for both residential and commercial spaces, ensuring that each project reflects my professional expertise and personal style.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="main-content-wrapper" class="main-content-wrapper">
+        
+        <section id="projects" class="projects-container">
+
+            <div class="project-item" data-project-id="1">
+                <div class="project-image-box">
+                    <img src="Rendered_01.jpg" alt="Renovation of an 8 sqm. Bedroom">
+                </div>
+                <div class="project-details">
+                    <div class="project-details-content">
+                        <span class="project-number">01</span>
+                        <h3>Renovation of an 8 sq.m. Bedroom</h3>
+                        <p class="location">Location: Santa Barbara, Victoria, Tarlac</p>
+                        <p class="description">The design focuses on both function and style, creating a simple yet cozy bedroom. It makes the most of the small space while keeping it bright, comfortable, and pleasing to the eye.</p>
+                        <button class="gallery-button" onclick="viewProjectGallery('1')">View Gallery <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item reverse" data-project-id="2">
+                <div class="project-image-box">
+                    <img src="Rendered_06.jpg" alt="Renovation of an 17 sqm. Bedroom">
+                </div>
+                <div class="project-details">
+                    <div class="project-details-contents">
+                        <span class="project-number">02</span>
+                        <h3>Renovation of an 17 sq.m. Bedroom</h3>
+                        <p class="location">Location: Dinorado St., Palayan, Payatas A, Quezon City</p>
+                        <p class="description">The design highlights comfort and function while keeping a clean and modern look. It uses space wisely to create a relaxing and stylish bedroom that feels warm and inviting.</p>
+                        <button class="gallery-button" onclick="viewProjectGallery('2')">View Gallery <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item" data-project-id="3">
+                <div class="project-image-box">
+                    <img src="Rendered_01 (1).png" alt="Modern Tropical Residential House">
+                </div>
+                <div class="project-details">
+                    <div class="project-details-content">
+                        <span class="project-number">03</span>
+                        <h3>Modern Tropical RH</h3>
+                        <p class="location">Location: Vicente Rama Ave., Busay Poblacion, Cebu City</p>
+                        <p class="description">The design combines natural elements with a modern touch, creating a bright and airy tropical home. It focuses on comfort, openness, and harmony with the surroundings.</p>
+                        <button class="gallery-button" onclick="viewProjectGallery('3')">View Gallery <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item reverse" data-project-id="4">
+                <div class="project-image-box">
+                    <img src="contactimg.png" alt="Zero Waste Cafe Interior Design">
+                </div>
+                <div class="project-details">
+                    <div class="project-details-contents">
+                        <span class="project-number">04</span>
+                        <h3>Zero Waste Cafe</h3>
+                        <p class="location">Location: Isabelo Mendoza, San Roque, Marikina City</p>
+                        <p class="description">The design uses natural materials and soft tones to create a cozy, eco-friendly café that promotes sustainable living. People can relax and enjoy a mindful dining experience.</p>
+                        <button class="gallery-button" onclick="viewProjectGallery('4')">View Gallery <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="before-after" class="before-after-section">
+            <p class="bna-title">BEFORE AND AFTER</p>
+            <div class="bna-divider"></div>
+
+            <div class="bna-wrapper">
+                <nav class="bna-nav" aria-label="Before and After Project Selection">
+                    <a href="#" class="active" data-project="1"
+                        data-before="566378878_2602182220181049_645122901872577730_n (1).jpg"
+                        data-after="Rendered_01.jpg" aria-label="View Project 1">PROJECT 1</a>
+
+                    <a href="#" data-project="2"
+                        data-before="outdated of rendered 2(1).png"
+                        data-after="Rendered_02 (1).jpg" aria-label="View Project 2">PROJECT 2</a>
+
+                    <a href="#" data-project="3"
+                        data-before="ChatGPT Image Dec 7, 2025, 03_42_58 PM.png"
+                        data-after="Rendered_03.png" aria-label="View Project 3">PROJECT 3</a>
+
+                    <a href="#" data-project="4"
+                        data-before="ChatGPT Image Dec 7, 2025, 03_43_58 PM.png"
+                        data-after="Rendered_07.png" aria-label="View Project 4">PROJECT 4</a>
+                </nav>
+
+                <div class="image-slider-frame">
+                    <div class="image-slider-container">
+                        <div class="image-slider">
+                            <div class="label label-after">AFTER</div>
+                            <div class="label label-before">BEFORE</div>
+                            
+                            <img id="after-img" class="after-img" src="Rendered_01.jpg" alt="After Image"> 
+                            <img id="before-img" class="before-img" src="566378878_2602182220181049_645122901872577730_n (1).jpg" alt="Before Image">
+                            
+                            <div class="slider-handle" role="slider" aria-label="Image Comparison Slider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div> 
+    
+    <div id="project-gallery-page" class="project-gallery-page"></div>
+    <template id="gallery-template-1">
+        <div class="gallery-header">
+            <h2>Renovation of an 8 sq.m. Bedroom</h2>
+            <button class="gallery-button" onclick="closeProjectGallery()">Back to Projects <i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="gallery-grid">
+            <img src="Rendered_03.jpg" alt="Project 1 Gallery Image 1">
+            <img src="Rendered_02.jpg" alt="Project 1 Gallery Image 2">
+            <img src="Rendered_04.jpg" alt="Project 1 Gallery Image 3">
+            <img src="Rendered_05.jpg" alt="Project 1 Gallery Image 4">
+        </div>
+    </template>
+
+    <template id="gallery-template-2">
+        <div class="gallery-header">
+            <h2>Renovation of an 17 sq.m. Bedroom</h2>
+            <button class="gallery-button" onclick="closeProjectGallery()">Back to Projects <i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="gallery-grid">
+            <img src="Rendered_01 (1).jpg" alt="Project 2 Gallery Image 1">
+            <img src="Rendered_02 (1).jpg" alt="Project 2 Gallery Image 2">
+            <img src="Rendered_04 (1).jpg" alt="Project 2 Gallery Image 3">
+            <img src="Rendered_07.jpg" alt="Project 2 Gallery Image 4">
+        </div>
+    </template>
+
+    <template id="gallery-template-3">
+        <div class="gallery-header">
+            <h2>Modern Tropical RH Gallery</h2>
+            <button class="gallery-button" onclick="closeProjectGallery()">Back to Projects <i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="gallery-grid">
+            <img src="Rendered_02.png" alt="Project 3 Gallery Image 1">
+            <img src="Rendered_04.png" alt="Project 3 Gallery Image 2">
+            <img src="Rendered_03.png" alt="Project 3 Gallery Image 3">
+            <img src="Rendered_07.png" alt="Project 3 Gallery Image 4">
+        </div>
+    </template>
+
+    <template id="gallery-template-4">
+        <div class="gallery-header">
+            <h2>Zero Waste Cafe Gallery</h2>
+            <button class="gallery-button" onclick="closeProjectGallery()">Back to Projects <i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="gallery-grid">
+            <img src="Rendered_06.png" alt="Project 4 Gallery Image 1">
+            <img src="Rendered_01.png" alt="Project 4 Gallery Image 2">
+            <img src="Rendered_02 (1).png" alt="Project 4 Gallery Image 3">
+            <img src="Rendered_08.png" alt="Project 4 Gallery Image 4">
+        </div>
+    </template>
+
+    <div id="footer">
+        <div class="footer-main">
+            <div class="footer-col f-left">
+                <span class="connect-text">STAY CONNECTED</span>
+                <div class="connect-line"></div>
+                <div class="f-social">
+                    <a href="https://www.instagram.com/merwin_yin/"> <img src="instagram.png" alt="IG"></a>
+                    <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="IN"></a>
+                    <a href="https://www.facebook.com/angelinemerwin.cainglet.1"><img src="facebook.png" alt="FB"></a>
+                </div>
+            </div>
+
+            <div class="footer-col f-center">
+                <img src="logo.png" alt="logo" class="f-logo">
+            </div>
+
+            <div class="footer-col f-right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="back-top"><a href="#">BACK TO TOP &uarr;</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-legal">
+            <div class="legal-content">
+                <span>
+                    &copy;
+                    <a href="https://www.facebook.com/r.kiveeele">BUENAOBRA</a>, 
+                    <a href="https://www.facebook.com/jheneil10">CUNANAN</a>, 
+                    <a href="https://www.facebook.com/alexia28nool/">NOOL</a>, 
+                    <a href="https://www.facebook.com/katherine.grace.pangilinan.14">PANGILINAN</a>
+                </span>
+                <div class="legal-links">
+                    <span onclick="showTerms()" style="cursor: pointer;">PRIVACY POLICY</span>
+                    <span onclick="showTerms()" style="cursor: pointer;">TERMS AND CONDITION</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="gallery.js" defer></script>
+    <script>
+        function showTerms() {
+            alert("TERMS AND CONDITIONS\n\n1. All content is protected by copyright.\n2. Projects displayed are for portfolio purposes only.\n3. By using this site, you agree to our policies.\n\n(Click OK to close)");
+        }
+    </script>
+</body>
+</html>
